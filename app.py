@@ -5,7 +5,7 @@ from streamlit.components.v1 import html
 import matplotlib.pyplot as plt
 
 # Load dataset
-df = pd.read_csv('/content/ASEAN Clean with Cluster.csv')
+df = pd.read_csv('/content/ASEAN-Air-Pollution---Capstone-G5-DS-GreatEdu/dataset/ASEAN Clean Cluster.csv')
 
 # Colors and warnings based on cluster
 cluster_colors = {0: 'blue', 1: 'orange', 2: 'red'}
@@ -23,7 +23,7 @@ view_option = st.sidebar.radio("Tampilkan", ("Informasi Kota", "10 Kota dengan A
 # Header
 col1, col2 = st.columns([1, 3])
 with col1:
-    st.image("asean_logo.png", width=150)
+    st.image("/content/ASEAN-Air-Pollution---Capstone-G5-DS-GreatEdu/asset/asean_logo.png", width=150)
 with col2:
     st.title("Informasi Polusi Kota di Negara ASEAN")
 
